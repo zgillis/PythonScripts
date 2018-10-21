@@ -5,7 +5,8 @@ db = dict(
     user="",
     passwd="",
 
-    db_stats=""
+    db_stats="nexostats"
 )
 
+interval = 30
 
