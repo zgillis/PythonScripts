@@ -31,7 +31,7 @@ try:
     ts = time.time()
     timestamp = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
-    print("Connecting to database at %s...", (db['host']))
+    print("Connecting to database at %s..." % (db['host']))
 
     db = mysql.connector.connect(host=db['host'], user=db['user'], passwd=db['passwd'], database=db['db_stats'])
     cursor = db.cursor()
